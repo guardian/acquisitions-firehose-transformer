@@ -15,6 +15,6 @@ object AcquisitionToCsv {
     val currency = acquisition.currency
     val dateTime = formatter.format(new Date(timestamp))
 
-    s"$frequency,$countryCode,$amount,$currency,$dateTime"
+    s"$frequency,$countryCode,$amount,$currency,$dateTime\n"
   }
 }
