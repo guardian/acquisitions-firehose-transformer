@@ -22,6 +22,7 @@ resolvers += Resolver.sonatypeRepo("releases")
 libraryDependencies ++= Seq(
   "com.amazonaws" % "aws-lambda-java-core" % "1.2.0",
   "com.amazonaws" % "aws-lambda-java-events" % "2.2.4",
+  "ch.qos.logback" % "logback-classic" % "1.1.7",
   "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0",
   "com.gu" %% "thrift-serializer" % "3.0.0",
   "com.gu" %% "ophan-event-model" % "0.0.6",
