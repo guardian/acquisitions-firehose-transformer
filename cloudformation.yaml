@@ -30,7 +30,7 @@ Resources:
       Description: A Firehose transformation lambda for serialising the acquisitions event stream to csv
       Runtime: java8
       Handler: com.gu.acquisitionFirehoseTransformer.Lambda::handler
-      MemorySize: 128
+      MemorySize: 256
       Timeout: 300
       CodeUri:
         Bucket: !Ref DeployBucket
