@@ -10,6 +10,8 @@ version := "0.1"
 
 scalaVersion := "2.12.8"
 
+val circeVersion = "0.10.0"
+
 scalacOptions ++= Seq(
   "-deprecation",
   "-encoding", "UTF-8",
@@ -26,7 +28,8 @@ libraryDependencies ++= Seq(
   "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0",
   "com.gu" %% "thrift-serializer" % "3.0.0",
   "com.gu" %% "ophan-event-model" % "0.0.6",
-  "org.scalatest" %% "scalatest" % "3.0.0" % "test"
+  "io.circe" %% "circe-core" % circeVersion,
+  "io.circe" %% "circe-generic" % circeVersion
 )
 
 
