@@ -8,16 +8,16 @@ import io.circe.generic.auto._
 import io.circe.syntax._
 import ophan.thrift.event.Acquisition
 
-case class AcquisitionOutput(
-  frequency: String,
-  countryCode: String,
-  amount: Double,
-  currency: String,
-  dateTime: String
-)
-
 object AcquisitionToJson {
   private val formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+
+  private case class AcquisitionOutput(
+    frequency: String,
+    countryCode: String,
+    amount: Double,
+    currency: String,
+    dateTime: String
+  )
 
   def apply(acquisition: Acquisition, timestamp: Long): Json =
     AcquisitionOutput(
