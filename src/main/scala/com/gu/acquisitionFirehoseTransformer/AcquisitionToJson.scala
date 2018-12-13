@@ -12,11 +12,11 @@ object AcquisitionToJson {
   private val formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
 
   private case class AcquisitionOutput(
-    frequency: String,
-    countryCode: String,
+    paymentfrequency: String,
+    countrycode: String,
     amount: Double,
     currency: String,
-    dateTime: String
+    timestamp: String
   )
 
   def apply(acquisition: Acquisition, timestamp: Long): Json =

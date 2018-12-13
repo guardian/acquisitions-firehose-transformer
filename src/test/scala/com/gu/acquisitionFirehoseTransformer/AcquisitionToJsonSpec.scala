@@ -22,6 +22,6 @@ class AcquisitionToJsonSpec extends FlatSpec with Matchers {
     )
 
     val jsonString = AcquisitionToJson(event, 1544710504165L).noSpaces
-    jsonString should be """{"frequency":"Monthly","countryCode":"US","amount":20.0,"currency":"GBP","dateTime":"2018-12-13 14:15:04"}"""
+    jsonString should be("""{"paymentfrequency":"Monthly","countrycode":"US","amount":20.0,"currency":"GBP","timestamp":"2018-12-13 14:15:04"}""")
   }
 }
