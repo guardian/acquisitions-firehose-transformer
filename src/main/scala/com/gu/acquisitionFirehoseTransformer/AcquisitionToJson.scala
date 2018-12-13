@@ -12,8 +12,8 @@ object AcquisitionToJson {
   private val formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
 
   private case class AcquisitionOutput(
-    paymentfrequency: String,
-    countrycode: String,
+    payment_frequency: String,
+    country_code: String,
     amount: Double,
     currency: String,
     timestamp: String
