@@ -29,7 +29,8 @@ libraryDependencies ++= Seq(
   "com.gu" %% "thrift-serializer" % "3.0.0",
   "com.gu" %% "ophan-event-model" % "0.0.6",
   "io.circe" %% "circe-core" % circeVersion,
-  "io.circe" %% "circe-generic" % circeVersion
+  "io.circe" %% "circe-generic" % circeVersion,
+  "org.scalatest" %% "scalatest" % "3.0.0" % "test"
 )
 
 
