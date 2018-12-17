@@ -23,7 +23,7 @@ object Lambda extends LazyLogging {
           None
         },
         (acquisition: Acquisition) => {
-          val jsonRow: String = AcquisitionToJson(acquisition, record.getApproximateArrivalTimestamp).noSpaces
+          val jsonRow: String = AcquisitionToJson(acquisition, record.getApproximateArrivalTimestamp).noSpaces +"\n"
 
           Some {
             new Record(record.getRecordId, Result.Ok, ByteBuffer.wrap(jsonRow.getBytes))
