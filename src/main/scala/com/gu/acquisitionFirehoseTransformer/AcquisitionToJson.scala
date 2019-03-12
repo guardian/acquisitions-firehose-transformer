@@ -16,7 +16,8 @@ object AcquisitionToJson {
     country_code: String,
     amount: Double,
     currency: String,
-    timestamp: String
+    timestamp: String,
+    componentId: String
   )
 
   def apply(acquisition: Acquisition, timestamp: Long): Json =
@@ -25,6 +26,7 @@ object AcquisitionToJson {
       acquisition.countryCode.getOrElse(""),
       acquisition.amount,
       acquisition.currency,
-      formatter.format(new Date(timestamp))
+      formatter.format(new Date(timestamp)),
+      acquisition.componentId.getOrElse("")
     ).asJson
 }
