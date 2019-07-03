@@ -22,6 +22,6 @@ class AcquisitionToJsonSpec extends FlatSpec with Matchers {
     )
 
     val jsonString = AcquisitionToJson(event, 1544710504165L).noSpaces
-    jsonString should be("""{"payment_frequency":"Monthly","country_code":"US","amount":20.0,"currency":"GBP","timestamp":"2018-12-13 14:15:04","campaignCode":"MY_CAMPAIGN_CODE","componentId":"MY_COMPONENT_ID"}""")
+    jsonString should be("""{"payment_frequency":"Monthly","country_code":"US","amount":20.0,"currency":"GBP","timestamp":"2018-12-13 14:15:04","campaignCode":"MY_CAMPAIGN_CODE","componentId":"MY_COMPONENT_ID","product":"RecurringContribution","paymentProvider":"Stripe"}""")
   }
 }
