@@ -27,7 +27,7 @@ libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-classic" % "1.1.7",
   "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0",
   "com.gu" %% "thrift-serializer" % "3.0.0",
-  "com.gu" %% "ophan-event-model" % "0.0.12",
+  "com.gu" %% "ophan-event-model" % "0.0.17",
   "io.circe" %% "circe-core" % circeVersion,
   "io.circe" %% "circe-generic" % circeVersion,
   "org.scalatest" %% "scalatest" % "3.0.0" % "test"
