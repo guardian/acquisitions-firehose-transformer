@@ -37,3 +37,9 @@ Resources:
         Key: !Sub ${Stack}/${Stage}/${App}/${App}.zip
       Policies:
       - AWSLambdaBasicExecutionRole
+      - Statement:
+        - Effect: Allow
+          Action: s3:GetObject
+          Resource:
+            - arn:aws:s3::*:membership-dist/*
+
